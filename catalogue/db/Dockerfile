@@ -27,3 +27,8 @@ COPY --from=build --chown=roboshop:roboshop /opt/server /opt/server
 USER roboshop
 CMD ["server.js"]
 ENTRYPOINT ["node"]
+
+
+# FROM node:20
+# WORKDIR /opt/server
+# COPY package.json .
