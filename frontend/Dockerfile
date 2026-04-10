@@ -11,3 +11,6 @@ RUN mkdir -p /var/cache/nginx/client_temp && \
         chown -R nginx:nginx /var/cache/nginx && \
         chown -R nginx:nginx /etc/nginx/ && \
         chmod -R 755 /etc/nginx/ && \
+        chown -R nginx:nginx /var/log/nginx
+
+RUN mkdir -p /etc/nginx/ssl/ && \
