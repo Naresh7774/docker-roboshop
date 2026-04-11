@@ -10,3 +10,8 @@ RUN apk add --no-cache \
     pcre-dev
 # Only requirements first for caching
 COPY requirements.txt .
+# Install into /install (just like you did)
+RUN pip3 install --prefix=/install -r requirements.txt
+
+
+# ===========================
