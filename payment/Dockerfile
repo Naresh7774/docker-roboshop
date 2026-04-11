@@ -15,3 +15,6 @@ RUN pip3 install --prefix=/install -r requirements.txt
 
 
 # ===========================
+# Stage 2: Runtime (Alpine)
+# ===========================
+FROM python:3.9.25-alpine3.21
