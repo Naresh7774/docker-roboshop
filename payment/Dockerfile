@@ -8,3 +8,5 @@ RUN apk add --no-cache \
     build-base \
     linux-headers \
     pcre-dev
+# Only requirements first for caching
+COPY requirements.txt .
