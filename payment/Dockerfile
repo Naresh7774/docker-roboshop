@@ -24,3 +24,6 @@ WORKDIR /opt/server
 # Create non-root user
 RUN addgroup -S roboshop && adduser -S roboshop -G roboshop
 # Copy installed packages from builder
+# Copy app files
+COPY --chown=roboshop:roboshop payment.ini *.py requirements.txt .
+ENV CART_HOST="cart" \
