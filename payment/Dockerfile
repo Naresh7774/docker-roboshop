@@ -27,3 +27,6 @@ RUN addgroup -S roboshop && adduser -S roboshop -G roboshop
 # Copy app files
 COPY --chown=roboshop:roboshop payment.ini *.py requirements.txt .
 ENV CART_HOST="cart" \
+    CART_PORT="8080" \
+    USER_HOST="user" \
+    USER_PORT="8080" \
