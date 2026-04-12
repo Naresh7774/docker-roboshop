@@ -21,3 +21,6 @@ FROM python:3.9.25-alpine3.21
 EXPOSE 8080
 WORKDIR /opt/server
 # Runtime deps only
+# Create non-root user
+RUN addgroup -S roboshop && adduser -S roboshop -G roboshop
+# Copy installed packages from builder
