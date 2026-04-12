@@ -33,3 +33,8 @@ ENV CART_HOST="cart" \
     AMQP_HOST="rabbitmq" \
     AMQP_USER="roboshop" \
     AMQP_PASS="roboshop123"
+USER roboshop
+CMD ["uwsgi", "--ini", "payment.ini"]
+
+
+# FROM python:3.9
