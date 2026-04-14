@@ -19,3 +19,7 @@ LABEL com.project="roboshop" \
 ENV MONGO="true" \
     REDIS_URL="redis://redis:6379" \
     MONGO_URL="mongodb://mongodb:27017/users"
+
+COPY --from=build --chown=roboshop:roboshop /opt/server /opt/server
+USER roboshop
+CMD ["server.js"]
