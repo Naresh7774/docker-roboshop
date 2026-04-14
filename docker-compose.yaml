@@ -10,3 +10,6 @@ services:
   mongodb:
     build: ./mongodb
     image: joindevops/mongodb:v1
+    container_name: mongodb
+    volumes:
+    - mongodb:/data/db
