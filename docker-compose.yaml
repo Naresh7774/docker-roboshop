@@ -7,3 +7,6 @@ services:
     container_name: catalogue
     depends_on:
     - mongodb
+  mongodb:
+    build: ./mongodb
+    image: joindevops/mongodb:v1
