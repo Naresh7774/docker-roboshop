@@ -62,3 +62,7 @@ services:
     - rabbitmq
     - cart
     - user
+  frontend:
+    build: ./frontend
+    image: joindevops/frontend:v1
+    container_name: frontend
