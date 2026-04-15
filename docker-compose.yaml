@@ -54,3 +54,6 @@ services:
     depends_on:
     - mysql
     - cart
+  payment:
+    build: ./payment
+    image: joindevops/payment:v1
