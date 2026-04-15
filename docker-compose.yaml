@@ -44,3 +44,6 @@ services:
     build: ./cart
     image: joindevops/cart:v1
     container_name: cart
+    depends_on:
+    - redis
+    - catalogue
