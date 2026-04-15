@@ -21,3 +21,6 @@ services:
   mysql:
     build: ./mysql
     image: joindevops/mysql:v1
+    container_name: mysql
+    volumes:
+    - mysql:/var/lib/mysql
