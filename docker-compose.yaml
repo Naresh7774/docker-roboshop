@@ -51,3 +51,6 @@ services:
     build: ./shipping
     image: joindevops/shipping:v1
     container_name: shipping
+    depends_on:
+    - mysql
+    - cart
