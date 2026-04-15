@@ -40,3 +40,7 @@ services:
     depends_on:
     - mongodb
     - redis
+  cart:
+    build: ./cart
+    image: joindevops/cart:v1
+    container_name: cart
