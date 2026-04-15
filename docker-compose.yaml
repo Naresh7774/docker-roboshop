@@ -57,3 +57,8 @@ services:
   payment:
     build: ./payment
     image: joindevops/payment:v1
+    container_name: payment
+    depends_on:
+    - rabbitmq
+    - cart
+    - user
