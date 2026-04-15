@@ -47,3 +47,7 @@ services:
     depends_on:
     - redis
     - catalogue
+  shipping:
+    build: ./shipping
+    image: joindevops/shipping:v1
+    container_name: shipping
