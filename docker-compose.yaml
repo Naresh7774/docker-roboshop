@@ -37,3 +37,6 @@ services:
     build: ./user
     image: joindevops/user:v1
     container_name: user
+    depends_on:
+    - mongodb
+    - redis
