@@ -33,4 +33,7 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: roboshop
       RABBITMQ_DEFAULT_PASS: roboshop123
-      
+  user:
+    build: ./user
+    image: joindevops/user:v1
+    container_name: user
